@@ -1,5 +1,5 @@
 # grafana-operator
-// TODO(user): Add simple overview of use/purpose
+Grafana k8s operator to load in dashboards with CRDs.
 
 ## Description
 Grafana k8s operator to load in dashboards with CRDs.
