@@ -1,0 +1,13 @@
+sidecar:
+  dashboards:
+    enabled: true
+    label: grafana_dashboard  # Ensure this label is being used in your ConfigMap
+    defaultNamespace: grafana  # Ensure this is the namespace where Grafana is running
+    directory: /etc/grafana/provisioning/dashboards  
+
+dashboardProviders:
+  default:
+    apiVersion: 1
+    directory: /etc/grafana/provisioning/dashboards
+
+

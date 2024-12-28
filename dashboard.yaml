@@ -1,0 +1,26 @@
+apiVersion: grafana.cyberwizzard.com/v1alpha1
+kind: DashboardConfig
+metadata:
+  name: example-dashboard-1
+  namespace: grafana  # Ensure this is the same namespace as Grafana
+  labels:
+    grafana_dashboard: "true"  # This label allows the sidecar to pick it up
+spec:
+  title: booya
+  json: |
+    {
+      "dashboard": {
+        "id": null,
+        "uid": "example-dashboard",
+        "title": "Example Dashboard",
+        "tags": ["example"],
+        "timezone": "browser",
+        "panels": [
+          {
+            "type": "graph",
+            "title": "Example Graph"
+          }
+        ]
+      }
+    }
+
