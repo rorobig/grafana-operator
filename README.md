@@ -2,7 +2,7 @@
 Grafana k8s operator to load in dashboards with CRDs.
 
 ## Description
-Created a configmap which grafana should automatically read and configure.
+Creats a configmap which grafana should automatically read and import them.
 in this example im using the sidecar variant but with the grafana operator configmaps are automatically seen as dashboard imports.
 
 ## Getting Started   
