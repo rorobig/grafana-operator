@@ -67,6 +67,9 @@ func (r *DashboardConfigReconciler) Reconcile(ctx context.Context, req ctrl.Requ
 		ObjectMeta: metav1.ObjectMeta{
 			Name:      dashboardConfig.Name + "-dashboard",
 			Namespace: req.Namespace,
+			Labels: map[string]string{
+				"grafana_dashboard": "true",
+			},
 		},
 		Data: map[string]string{
 			"dashboard.json": dashboardConfig.Spec.Json,

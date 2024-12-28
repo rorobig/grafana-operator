@@ -2,7 +2,7 @@
 // TODO(user): Add simple overview of use/purpose
 
 ## Description
-Grafana k8s operator to load in dashboards with CRD.
+Grafana k8s operator to load in dashboards with CRDs.
 
 ## Getting Started
 
